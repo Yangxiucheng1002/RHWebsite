@@ -1,0 +1,138 @@
+﻿/*公共样式...可重复利用的*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style-type: none;
+}
+body{
+	background: #f3f3f3;
+	display: block;
+	overflow-x: hidden;
+	font-size:16px;
+	color:#333;
+}
+/* 清楚默认样式 */
+
+/*header  头部样式 */
+.head{
+	display: block;
+	margin:0 auto;
+	width: 100%;
+}
+.header{
+	display: block;
+	margin:0 auto;
+	width: 1200px;
+}
+
+.logo{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+}
+/*@media screen and (max-width:1366px){ */
+/*	!*屏幕宽度小于1366 *!*/
+/*	.head{*/
+/*		width: 100%;*/
+/*	}*/
+/*	.header{*/
+/*		width: 1000px;*/
+/*	} */
+
+/*}*/
+
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navigation-bar{
+    width: 100%;
+    background: #1669c4;
+    height: 68px;
+}
+.navigation-menu{
+    width:  70%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    line-height: 68px;
+}
+@media (min-width: 960px)and (max-width: 1920px){
+    .navigation-menu>li{
+        padding:0 25px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 20px 25px 20px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
+@media (min-width: 753px)and (max-width: 959px) {
+    .navigation-menu>li{
+        padding:0 17px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 10px 25px 10px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
+@media (min-width: 595px)and (max-width: 752px) {
+    .navigation-menu>li{
+        padding:0 10px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 10px 25px 10px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
+@media (max-width: 594px) {
+    .navigation-menu{
+        width:  95%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        line-height: 68px;
+        padding: 0 5px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 10px 25px 10px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
