@@ -69,3 +69,24 @@ a{
         border-top-right-radius:5px
     }
 }
+@media (max-width: 594px) {
+    .navigation-menu{
+        width:  95%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        line-height: 68px;
+        padding: 0 5px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 10px 25px 10px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
