@@ -1,73 +1,135 @@
 ﻿/*公共样式...可重复利用的*/
 
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 a{
-	text-decoration: none;
-	color: #333;
+    text-decoration: none;
+    color: #333;
 }
 li{
-	list-style-type: none;
+    list-style-type: none;
 }
 body{
-	background: #f3f3f3;
-	display: block;
-	overflow-x: hidden;
-	font-size:16px;
-	color:#333;
+    background: #f3f3f3;
+    display: block;
+    overflow-x: hidden;
+    font-size:16px;
+    color:#333;
+    font-family: "微软雅黑";
 }
 /* 清楚默认样式 */
 
 /*header  头部样式 */
 .head{
-	display: block;
-	margin:0 auto;
-	width: 100%;
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    height: 88px;
 }
 .header{
-	display: block;
-	margin:0 auto;
-	width: 1200px;
+    display: block;
+    margin:0 auto;
+    width: 1200px;
+   
 }
 
 .logo{
-	width: 100%;
-	display: flex;
-	flex-direction:row;
-}
-/*@media screen and (max-width:1366px){ */
-/*	!*屏幕宽度小于1366 *!*/
-/*	.head{*/
-/*		width: 100%;*/
-/*	}*/
-/*	.header{*/
-/*		width: 1000px;*/
-/*	} */
-
-/*}*/
-
-ul,li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 8px 0;
 }
 
+.logo_lef,.logo_right{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo_img{
+    width: 230px;
+    margin-left:8px;
+}
+.phone_img{
+    width: 64px;
+    display: block;
+}
+.logo_img img {
+    display: block;
+    width: 100%;
+}
+.introduce{
+    margin: 0 0 0 10px;
+    color:#196bc0; 
+}
+.phone{
+    margin: 0 0 0 10px;
+    color:#196bc0;
+}
+.phone_img img {
+    display: block;
+    width: 100%;
+}
+.introduce p{
+    font-size: 22px;
+    line-height: 36px ;
+}
+.phone p{
+    font-size: 22px;
+    line-height: 36px ;
+    color:#196bc0;
+}
+.introduce span{ 
+    font-size: 14px;
+
+}
+.phone span{ 
+    font-size: 14px;
+    font-weight: bold;
+    color:#196bc0;
+}
+
+/*导航栏*/
 .navigation-bar{
     width: 100%;
     background: #1669c4;
     height: 68px;
 }
 .navigation-menu{
-    width:  70%;
+    width:  1200px;
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
     line-height: 68px;
 }
-@media (min-width: 960px)and (max-width: 1920px){
+@media (min-width: 1200px)and (max-width: 1920px){
+  .navigation-menu>li{
+        padding:0 25px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:10px 20px 25px 20px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+
+}
+
+@media (min-width: 960px)and (max-width: 1199px){
+    .header{
+        width: 90%
+   }
+   .navigation-menu{
+        width: 90%;
+   }
     .navigation-menu>li{
         padding:0 25px;
     }
@@ -83,7 +145,14 @@ a{
         border-top-right-radius:5px
     }
 }
+
 @media (min-width: 753px)and (max-width: 959px) {
+     .header{
+        width: 90%
+   }
+   .navigation-menu{
+        width: 90%;
+   }
     .navigation-menu>li{
         padding:0 17px;
     }
@@ -99,7 +168,33 @@ a{
         border-top-right-radius:5px
     }
 }
+
 @media (min-width: 595px)and (max-width: 752px) {
+      body {
+        font-size:14px;
+    }
+    
+    .header{
+        width: 90%
+   }
+   .logo_img {
+        width: 200px;
+        margin-left: 8px;
+    }
+    .phone_img {
+        width: 60px;
+        display: block;
+    }
+
+   .introduce p {
+        line-height: 30px;
+    }
+    .phone p {
+        line-height: 30px;
+    }
+   .navigation-menu{
+        width: 90%;
+   }
     .navigation-menu>li{
         padding:0 10px;
     }
@@ -115,23 +210,123 @@ a{
         border-top-right-radius:5px
     }
 }
-@media (max-width: 594px) {
+@media (min-width: 321px)and (max-width: 595px){
+        body {
+        font-size:12px;
+    }
+    .logo{
+        padding: 8px 0;
+    }
+    .logo_img{
+        width: 100px;
+        margin-left:0;
+    }
+    .introduce{
+        margin-left:2px;
+    }
+    .introduce p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .phone p {
+         font-size: 10px;
+        line-height: 12px;
+    }
+    .introduce span {
+        font-size: 8px;
+    }
+     .phone span {
+        font-size: 8px;
+    }
+    .phone_img{
+        width: 24px;
+    }
+     .header{
+        width: 90%
+   }
+    .navigation-bar{
+        height: 31px;
+
+    }
+     .header{
+        width: 90%
+   }
+   .navigation-menu{
+        width: 90%;
+   }
     .navigation-menu{
-        width:  95%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        line-height: 68px;
+        line-height: 31px;
         padding: 0 5px;
     }
     .navigation-menu>li>a{
         color: #ffffff;
-        font-size: 14px;
+        font-size: 12px;
     }
     .navigation-active{
         background: white;
         color: #1669c4!important;
-        padding:10px 10px 25px 10px;
+        padding:7px 7px 7px 7px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px
+    }
+}
+@media (max-width: 320px) {
+    body {
+        font-size:10px;
+    }
+    .logo{
+        padding: 8px 0;
+    }
+    .logo_img{
+        width: 80px;
+        margin-left:0;
+    }
+    .introduce{
+        margin-left:2px;
+    }
+    .introduce p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .phone p {
+         font-size: 10px;
+        line-height: 12px;
+    }
+    .introduce span {
+        font-size: 8px;
+    }
+     .phone span {
+        font-size: 8px;
+    }
+    .phone_img{
+        width: 24px;
+    }
+     .header{
+        width: 90%
+   }
+    .navigation-bar{
+        height: 24px;
+
+    }
+    .navigation-menu{
+        width:  90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        line-height: 24px;
+        padding: 0 3px;
+    }
+    .navigation-menu>li>a{
+        color: #ffffff;
+        font-size: 8px;
+    }
+    .navigation-active{
+        background: white;
+        color: #1669c4!important;
+        padding:5px 5px 5px 5px;
         border-top-left-radius:5px;
         border-top-right-radius:5px
     }
