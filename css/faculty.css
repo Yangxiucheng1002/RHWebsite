@@ -1,0 +1,13 @@
+.content-wrap{
+    width: 100%;
+}
+.content-img{
+    width: 100%;
+}
+@media (min-width: 1366px) {
+    .content-teacher{
+        width: 1200px;
+        margin: 0 auto;
+        background: #f3f3f3;
+    }
+}
