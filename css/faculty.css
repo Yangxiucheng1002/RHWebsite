@@ -22,6 +22,7 @@
 }
 .teacher-item{
     width: 560px;
+    height: 470px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -39,5 +40,12 @@
 }
 .teacher-message>h5{
     font-size: 25px;
-    color: #f1b68a;
+    color: #f08614;
+}
+.teacher-message>p{
+    width: 200px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 18px;
 }
