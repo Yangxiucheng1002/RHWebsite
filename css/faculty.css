@@ -1,868 +1,499 @@
-.content-wrap{
+.content-wrap {
     width: 100%;
     background: white;
 }
-.content-img{
+
+.content-img {
     width: 100%;
 }
-.content-teacher-img{
-    width: 100%;
+
+.content-teacher-img {
     overflow: hidden;
 }
-.content-img-auto>img{
-    width: 100%;
-}
-.first-img{
-    position: relative;
-}
-.last-img{
-    margin-left: 30px;
-    position: relative;
-}
-.first-img:hover .mask{
-    display: none;
-}
-.last-img:hover .mask1{
-    display: none;
-}
 
-@media (min-width: 1366px) {
-    .content-teacher{
+@media (max-width: 1920px) {
+    .img-wrap {
         width: 1200px;
         margin: 0 auto;
-        /*background: #f3f3f3;*/
-    }
-    .content-img-auto{
-        width: 822px;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 22px;
-        position: absolute;
-        top: 90px;
-        left: 350px;
-    }
-    .content-teacher-message>h6{
-        font-size: 20px;
-        position: absolute;
-        top: 120px;
-        left: 350px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 18px;
-        position: absolute;
-        top: 180px;
-        left: 350px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width: 822px;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
-    }
-
-}
-
-@media (min-width: 1200px)and (max-width: 1365px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 70%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 22px;
-        position: absolute;
-        top: 90px;
-        left: 350px;
-    }
-    .content-teacher-message>h6{
-        font-size: 20px;
-        position: absolute;
-        top: 120px;
-        left: 350px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 18px;
-        position: absolute;
-        top: 180px;
-        left: 350px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:70%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
     }
 }
 
-@media (min-width: 1100px)and (max-width: 1199px){
-    .content-teacher{
-        width:90%;
+.img-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teacher-item {
+    width: 560px;
+    height: 470px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid #196bc0;
+}
+
+.teacher-item > img {
+    width: 49%;
+}
+
+.teacher-item > div {
+    width: 49%;
+}
+
+.teacher-message {
+    padding: 100px 55px 95px 35px;
+}
+
+.teacher-message > h5 {
+    font-size: 25px;
+    color: #f08614;
+}
+
+.teacher-message > p {
+    width: 200px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 18px;
+}
+
+@media (max-width: 1300px) {
+    .img-wrap {
+        width: 90%;
         margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 70%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 22px;
-        position: absolute;
-        top: 70px;
-        left: 350px;
-    }
-    .content-teacher-message>h6{
-        font-size: 20px;
-        position: absolute;
-        top: 100px;
-        left: 350px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 18px;
-        position: absolute;
-        top: 150px;
-        left: 350px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:70%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
     }
 }
 
-@media (min-width: 950px)and (max-width: 1099px) {
-    .content-teacher{
-        width:90%;
+@media (max-width: 1280px) {
+    .img-wrap {
+        width: 90%;
         margin: 0 auto;
     }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 20px;
-        position: absolute;
-        top: 70px;
-        left: 320px;
-    }
-    .content-teacher-message>h6{
-        font-size: 18px;
-        position: absolute;
-        top:100px;
-        left: 320px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 18px;
-        position: absolute;
-        top: 150px;
-        left: 320px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
+
+    .teacher-item {
+        width: 47%;
+        height: 470px;
+        margin-top: 50px;
         display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
 }
 
-@media (min-width: 900px)and (max-width: 949px) {
-    .content-teacher{
-        width:90%;
+@media (max-width: 1125px) {
+    .img-wrap {
+        width: 90%;
         margin: 0 auto;
     }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 20px;
-        position: absolute;
-        top: 70px;
-        left: 300px;
-    }
-    .content-teacher-message>h6{
-        font-size: 18px;
-        position: absolute;
-        top:100px;
-        left: 300px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 18px;
-        position: absolute;
-        top: 150px;
-        left: 300px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
+
+    .teacher-item {
+        width: 47%;
+        height: 400px;
+        margin-top: 50px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+
+    .teacher-message {
+        padding: 90px 40px 85px 25px;
     }
 }
 
-@media (min-width: 770px)and (max-width: 899px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 18px;
-        position: absolute;
-        top: 50px;
-        left: 250px;
-    }
-    .content-teacher-message>h6{
+@media (max-width: 1080px) {
+    .teacher-message > p {
+        width: 180px;
+        line-height: 30px;
+        margin-top: 20px;
+        color: #666666;
         font-size: 16px;
-        position: absolute;
-        top:80px;
-        left: 250px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 15px;
-        position: absolute;
-        top: 120px;
-        left: 250px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
     }
 }
 
-@media (min-width: 720px) and (max-width: 769px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
+@media (max-width: 999px) {
+    .teacher-item {
+        width: 400px;
+        height: 350px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
+    .teacher-message {
+        padding: 80px 30px 75px 15px;
     }
-    .content-teacher-message>h5{
-        font-size: 18px;
-        position: absolute;
-        top: 50px;
-        left: 230px;
+}
+
+@media (max-width: 940px) {
+    .teacher-item {
+        width: 370px;
+        height: 280px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .content-teacher-message>h6{
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
         font-size: 16px;
-        position: absolute;
-        top:80px;
-        left: 230px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 15px;
-        position: absolute;
-        top: 120px;
-        left: 230px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
     }
 }
 
-@media (min-width: 670px)and (max-width: 719px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 15px;
-        position: absolute;
-        top: 50px;
-        left: 200px;
-    }
-    .content-teacher-message>h6{
-        font-size: 14px;
-        position: absolute;
-        top:80px;
-        left: 200px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 14px;
-        position: absolute;
-        top: 100px;
-        left: 200px;
-        font-weight: normal;
-        line-height: 30px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
+@media (max-width: 870px) {
+    .teacher-item {
+        width: 350px;
+        height: 270px;
+        margin-top: 50px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
     }
-}
-
-@media (min-width: 640px)and (max-width: 669px){
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
     }
-    .content-img-auto{
-        width: 80%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 15px;
-        position: absolute;
-        top: 50px;
-        left: 180px;
-    }
-    .content-teacher-message>h6{
-        font-size: 14px;
-        position: absolute;
-        top:80px;
-        left: 180px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 14px;
-        position: absolute;
-        top: 105px;
-        left: 180px;
-        font-weight: normal;
-        line-height: 25px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
-    }
-}
-
-@media (min-width: 519px)and (max-width: 639px){
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 70px;
-        left: 230px;
-    }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:100px;
-        left: 230px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 13px;
-        position: absolute;
-        top: 120px;
-        left: 230px;
-        font-weight: normal;
-        line-height: 25px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
-    }
-}
-
-@media (min-width: 490px)and (max-width: 518px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 50px;
-        left: 180px;
-    }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:80px;
-        left: 180px;
-    }
-    .content-teacher-message>p{
-        width: 260px;
-        font-size: 13px;
-        position: absolute;
-        top: 105px;
-        left: 180px;
-        font-weight: normal;
-        line-height: 25px;
-    }
-    .content-img-mousemove{
-        width:80%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
-    }
-}
-
-@media (min-width: 455px)and (max-width: 489px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 50px;
-        left: 170px;
-    }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:80px;
-        left: 170px;
-    }
-    .content-teacher-message>p{
-        width: 240px;
-        font-size: 13px;
-        position: absolute;
-        top: 105px;
-        left: 170px;
-        font-weight: normal;
+    .teacher-message > p {
+        width: 150px;
         line-height: 20px;
-    }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
     }
 }
 
-@media (min-width: 430px)and (max-width: 454px){
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
+@media (max-width: 830px) {
+    .teacher-item {
+        width: 340px;
+        height: 270px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
     }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 40px;
-        left: 140px;
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
     }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:70px;
-        left: 140px;
-    }
-    .content-teacher-message>p{
-        width: 240px;
-        font-size: 13px;
-        position: absolute;
-        top: 95px;
-        left: 140px;
-        font-weight: normal;
+    .teacher-message > p {
+        width: 150px;
         line-height: 20px;
-        display: block;
-    }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
     }
 }
 
-@media (min-width: 415px)and (max-width: 429px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
+@media (max-width: 810px) {
+    .teacher-item {
+        width: 330px;
+        height: 270px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
     }
-    .content-teacher-message>h5{
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 799px) {
+    .teacher-item {
+        width: 320px;
+        height: 260px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 130px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 759px) {
+    .teacher-item {
+        width: 300px;
+        height: 250px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 130px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 739px) {
+    .teacher-item {
+        width: 280px;
+        height: 250px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 120px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
         font-size: 14px;
-        position: absolute;
-        top: 40px;
-        left: 140px;
     }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:70px;
-        left: 140px;
+}
+
+@media (max-width: 680px) {
+    .teacher-item {
+        width: 270px;
+        height: 240px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .content-teacher-message>p{
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 120px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .teacher-item {
+        width: 250px;
+        height: 240px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .teacher-item {
         width: 230px;
-        font-size: 13px;
-        position: absolute;
-        top: 95px;
-        left: 140px;
-        font-weight: normal;
-        line-height: 19px;
-        display: block;
-    }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
+        height: 240px;
+        margin-top: 50px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #666666;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 385px)and (max-width: 414px) {
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 40px;
-        left: 140px;
-    }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:60px;
-        left: 140px;
-    }
-    .content-teacher-message>p{
-        width: 210px;
-        font-size: 13px;
-        position: absolute;
-        top: 85px;
-        left: 140px;
-        font-weight: normal;
-        line-height: 19px;
-        display: block;
-    }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
+@media (max-width: 540px) {
+    .teacher-item {
+        width: 220px;
+        height: 230px;
+        margin-top: 50px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
     }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+    .teacher-message {
+        padding: 10px 10px 75px 5px;
     }
-}
-
-@media (min-width: 368px)and (max-width: 384px){
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
     }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 30px;
-        left: 140px;
-    }
-    .content-teacher-message>h6{
+    .teacher-message > p {
+        width: 90px;
+        /*line-height: 10px;*/
+        margin-top: 5px;
+        color: #666666;
         font-size: 13px;
-        position: absolute;
-        top:45px;
-        left: 140px;
-    }
-    .content-teacher-message>p{
-        width: 185px;
-        font-size: 13px;
-        position: absolute;
-        top: 70px;
-        left: 140px;
-        font-weight: normal;
-        line-height: 19px;
-        display: block;
-    }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .mask,.mask1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
-    }
-}
-
-@media (max-width: 367px){
-    .content-teacher{
-        width:90%;
-        margin: 0 auto;
-    }
-    .content-img-auto{
-        width: 100%;
-        margin: auto;
-        position: relative;
-    }
-    .content-teacher-message>h5{
-        font-size: 14px;
-        position: absolute;
-        top: 20px;
-        left: 130px;
-    }
-    .content-teacher-message>h6{
-        font-size: 13px;
-        position: absolute;
-        top:38px;
-        left: 130px;
-    }
-    .content-teacher-message>p{
-        width: 185px;
-        font-size: 13px;
-        position: absolute;
-        top: 55px;
-        left: 130px;
-        font-weight: normal;
-        line-height: 19px;
-        display: block;
         overflow: hidden;
+        word-wrap: break-spaces;
     }
-    .content-img-mousemove{
-        width:100%;
-        margin: 10px auto;
+}
+
+@media (max-width: 440px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
     }
-    .mask,.mask1{
-        position: absolute;
+    .teacher-message {
+        padding: 30px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 140px;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
+}
+
+@media (max-width: 387px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
+    }
+    .teacher-message {
+        padding: 30px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
         width: 120px;
-        height: 120px;
-        background: black;
-        top: 0;
-        border-radius: 50%;
-        opacity: .5;
-        display: block;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
+}
+
+@media (max-width: 357px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
+    }
+    .teacher-message {
+        padding: 20px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
     }
 }
