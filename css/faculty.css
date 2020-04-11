@@ -1,51 +1,499 @@
-.content-wrap{
+.content-wrap {
     width: 100%;
     background: white;
 }
-.content-img{
+
+.content-img {
     width: 100%;
 }
-.content-teacher-img{
+
+.content-teacher-img {
     overflow: hidden;
 }
 
 @media (max-width: 1920px) {
-    .img-wrap{
+    .img-wrap {
         width: 1200px;
         margin: 0 auto;
     }
 }
-.img-wrap{
+
+.img-wrap {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-.teacher-item{
+
+.teacher-item {
     width: 560px;
     height: 470px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
-    border:2px solid #196bc0;
+    border: 2px solid #196bc0;
 }
-.teacher-item>img{
+
+.teacher-item > img {
     width: 49%;
 }
-.teacher-item>div{
+
+.teacher-item > div {
     width: 49%;
 }
-.teacher-message{
+
+.teacher-message {
     padding: 100px 55px 95px 35px;
 }
-.teacher-message>h5{
+
+.teacher-message > h5 {
     font-size: 25px;
     color: #f08614;
 }
-.teacher-message>p{
+
+.teacher-message > p {
     width: 200px;
     line-height: 30px;
     margin-top: 20px;
     color: #666666;
     font-size: 18px;
+}
+
+@media (max-width: 1300px) {
+    .img-wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .img-wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .teacher-item {
+        width: 47%;
+        height: 470px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+}
+
+@media (max-width: 1125px) {
+    .img-wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .teacher-item {
+        width: 47%;
+        height: 400px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+
+    .teacher-message {
+        padding: 90px 40px 85px 25px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .teacher-message > p {
+        width: 180px;
+        line-height: 30px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 999px) {
+    .teacher-item {
+        width: 400px;
+        height: 350px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 80px 30px 75px 15px;
+    }
+}
+
+@media (max-width: 940px) {
+    .teacher-item {
+        width: 370px;
+        height: 280px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 870px) {
+    .teacher-item {
+        width: 350px;
+        height: 270px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 830px) {
+    .teacher-item {
+        width: 340px;
+        height: 270px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 810px) {
+    .teacher-item {
+        width: 330px;
+        height: 270px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 30px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 150px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 799px) {
+    .teacher-item {
+        width: 320px;
+        height: 260px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 130px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 759px) {
+    .teacher-item {
+        width: 300px;
+        height: 250px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 130px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 739px) {
+    .teacher-item {
+        width: 280px;
+        height: 250px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 120px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 680px) {
+    .teacher-item {
+        width: 270px;
+        height: 240px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 120px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .teacher-item {
+        width: 250px;
+        height: 240px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .teacher-item {
+        width: 230px;
+        height: 240px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 40px 20px 75px 15px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #666666;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .teacher-item {
+        width: 220px;
+        height: 230px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+    }
+    .teacher-message {
+        padding: 10px 10px 75px 5px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 90px;
+        /*line-height: 10px;*/
+        margin-top: 5px;
+        color: #666666;
+        font-size: 13px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
+}
+
+@media (max-width: 440px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
+    }
+    .teacher-message {
+        padding: 30px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 140px;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
+}
+
+@media (max-width: 387px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
+    }
+    .teacher-message {
+        padding: 30px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 120px;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
+}
+
+@media (max-width: 357px) {
+    .teacher-item {
+        width: 90%;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 2px solid #196bc0;
+        margin: 10px auto;
+    }
+    .teacher-message {
+        padding: 20px 20px 75px 20px;
+    }
+    .teacher-message > h5 {
+        font-size: 20px;
+        color: #f08614;
+    }
+    .teacher-message > p {
+        width: 100px;
+        margin-top: 5px;
+        color: #666666;
+        font-size: 15px;
+        overflow: hidden;
+        word-wrap: break-spaces;
+    }
 }
