@@ -130,6 +130,7 @@ body{
     display: -webkit-flex;
     align-items:center;
     justify-content:center;
+    text-transform: uppercase;
 }
 .content-common-subtitle img{
     width: 52px;
@@ -197,6 +198,7 @@ body{
     .content-common-title .content-common-subtitle{
         font-size: 16px;
         line-height: 24px;
+
     }
     .content-common-subtitle img{
         width: 40px;
@@ -206,7 +208,7 @@ body{
 }
 
 @media (min-width: 753px)and (max-width: 959px) {
-     .header{
+    .header{
         width: 90%
    }
    .navigation-menu{
@@ -242,7 +244,7 @@ body{
 }
 
 @media (min-width: 595px)and (max-width: 752px) {
-      body {
+    body {
         font-size:14px;
     }
     
@@ -296,7 +298,7 @@ body{
     }
 }
 @media (min-width: 321px)and (max-width: 595px){
-        body {
+    body {
         font-size:12px;
     }
     .logo{
