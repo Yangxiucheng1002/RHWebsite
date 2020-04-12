@@ -1,7 +1,78 @@
-.content-wrap{
+.content-wrap {
     width: 100%;
     background: white;
 }
-.content-img{
+
+.content-img {
     width: 100%;
+}
+
+.list-wrap {
+    margin: 0 auto;
+    box-shadow: 0 0 5px #888888;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 36px;
+    margin: 15px 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title > img {
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.list-left {
+    width: 75%;
+    padding: 0 15px;
+}
+
+.list-right {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.tab-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-title > li {
+    width: 14%;
+    text-align: center;
+    background: red;
+}
+
+.item {
+    /*display: block;*/
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item > span {
+    width: 14%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: red;
+}
+
+@media (min-width: 1300px) {
+    .list-wrap {
+        width: 1200px;
+        height: 503px;
+    }
 }
