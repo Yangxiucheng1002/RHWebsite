@@ -256,7 +256,23 @@
             </div>
         </div>
         <div class="list-right">
-            <div class="title"><img src="../images/文档.png" alt=""><span>近期就业信息>></span></div>
+            <div class="title"><img src="../images/电影.png" alt=""><span>近期就业信息>></span></div>
+            <div>
+                <ul class="student">
+                    <li>
+                        <img src="../images/fandi2.jpg" alt="">
+                        <a href="www.baidu.com" target="_blank">席*思</a>
+                    </li>
+                    <li>
+                        <img src="../images/fandi2.jpg" alt="">
+                        <a href="www.baidu.com" target="_blank">席*思</a>
+                    </li>
+                    <li>
+                        <img src="../images/fandi2.jpg" alt="">
+                        <a href="www.baidu.com" target="_blank">席*思</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -273,7 +289,7 @@
         // 鼠标移入div时暂停滚动
         ulbox.onmouseover = function () {
             clearInterval(timer);
-        }
+        };
         // 鼠标移出div后继续滚动
         ulbox.onmouseout = function () {
             timer = setInterval(rollStart, t);
@@ -287,12 +303,11 @@
         const ulbox = document.getElementById("review_box");
         // 正常滚动不断给scrollTop的值+1,当滚动高度大于列表内容高度时恢复为0
         if (ulbox.scrollTop >= ul1.scrollHeight) {
-            ulbox.scrollTop = 0;
+            ulbox.scrollTop=0;
         } else {
             ulbox.scrollTop++;
         }
     }
-
 </script>
 </body>
 </html>
