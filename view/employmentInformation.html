@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/swiper.min.js"></script>
     <title>就业信息</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         <img src="../images/infomation.png" alt="" class="content-img">
     </div>
     <!--小标题-->
-    <div class="content-common-title">
+    <div class="content-common-title" style="margin-top: 70px;margin-bottom: 50px">
         <h3>就业信息</h3>
         <p class="content-common-subtitle">
             <img src="../images/public/titel_img.png">
@@ -41,7 +43,7 @@
                 </ul>
                 <div style="overflow: hidden ;height: 340px;" id="review_box">
                     <div id="comment1">
-                        <ul class="item-wrap" >
+                        <ul class="item-wrap">
                             <li class="item">
                                 <span>席梦思</span>
                                 <span>大专</span>
@@ -275,12 +277,121 @@
             </div>
         </div>
     </div>
+    <!--小标题-->
+    <div class="content-common-title" style="margin-top: 70px;margin-bottom: 50px">
+    <h3>就业反馈</h3>
+    <p class="content-common-subtitle">
+        <img src="../images/public/titel_img.png">
+        <span>PROFESSIONAL TEAM</span>
+    </p>
+    <div class="banner-warp">
+        <div class="swiper-container swiper-container-horizontal" style="height: 300px">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                    <img src="./1.jpg" alt="">
+                </div>
+                <div class="swiper-slide swiper-slide-next">
+                    <img src="./2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./4.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content-common-title" style="margin-top: 70px;margin-bottom: 50px">
+    <h3>用人企业反馈</h3>
+    <p class="content-common-subtitle">
+        <img src="../images/public/titel_img.png">
+        <span>PROFESSIONAL TEAM</span>
+    </p>
+    <div class="bg-wrap">
+        <div style="width: 50% ;margin-top: 30px">
+            <div class="bg-item">
+                <div class="bg-content">
+                    <h5>李*  <span style="padding-left: 20px">软通动力HR</span></h5>
+                    <p>蓉华的学员动手能力强，适应工作也很快，能够很快融入项目组，并能独立承担工作，深的项目经理好评</p>
+                </div>
+                <img src="../images/bg1.png" alt="">
+            </div>
+            <div class="bg-item">
+                <div class="bg-content">
+                    <h5>李*  <span style="padding-left: 20px">软通动力HR</span></h5>
+                    <p>蓉华的学员动手能力强，适应工作也很快，能够很快融入项目组，并能独立承担工作，深的项目经理好评</p>
+                </div>
+                <img src="../images/bg1.png" alt="">
+            </div>
+        </div>
+        <div style="width: 50%;margin-top: 30px">
+            <div class="bg-item">
+                <div class="bg-content">
+                    <h5>李*  <span style="padding-left: 20px">软通动力HR</span></h5>
+                    <p>蓉华的学员动手能力强，适应工作也很快，能够很快融入项目组，并能独立承担工作，深的项目经理好评</p>
+                </div>
+                <img src="../images/bg1.png" alt="">
+            </div>
+            <div class="bg-item">
+                <div class="bg-content">
+                    <h5>李*  <span style="padding-left: 20px">软通动力HR</span></h5>
+                    <p>蓉华的学员动手能力强，适应工作也很快，能够很快融入项目组，并能独立承担工作，深的项目经理好评</p>
+                </div>
+                <img src="../images/bg1.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content-common-title" style="margin-top: 70px;margin-bottom: 50px">
+        <h3>合作企业</h3>
+        <p class="content-common-subtitle">
+            <img src="../images/public/titel_img.png">
+            <span>PROFESSIONAL TEAM</span>
+        </p>
+        <div class="enterprise">
+            <div class="auto-img">
+              <ul>
+                  <li>
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                  </li>
+                  <li style="padding: 30px 0">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                      <img src="../images/hw.png" alt="">
+                  </li>
+
+              </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <div>
     底部导航通用部分
 </div>
 <script>
     window.onload = roll(50);
+
     function roll(t) {
         const ul1 = document.getElementById("comment1");
         const ul2 = document.getElementById("comment2");
@@ -297,6 +408,7 @@
             timer = setInterval(rollStart, t);
         }
     }
+
     // 开始滚动函数
     function rollStart() {
         // 上面声明的DOM对象为局部对象需要再次声明
@@ -310,6 +422,20 @@
             ulbox.scrollTop++;
         }
     }
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 5,
+        freeMode: true,
+        speed: 2000,
+        loop: true,
+        autoplay:true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
 </script>
 </body>
 </html>
