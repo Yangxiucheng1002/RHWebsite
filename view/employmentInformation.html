@@ -39,7 +39,7 @@
                     <li>年薪</li>
                     <li>就业城市</li>
                 </ul>
-                <div style="overflow: hidden ;height: 350px;" id="review_box">
+                <div style="overflow: hidden ;height: 340px;" id="review_box">
                     <div id="comment1">
                         <ul class="item-wrap" >
                             <li class="item">
@@ -280,7 +280,7 @@
     底部导航通用部分
 </div>
 <script>
-    window.onload = roll(50);
+    window.onload = roll(10);
     function roll(t) {
         const ul1 = document.getElementById("comment1");
         const ul2 = document.getElementById("comment2");
@@ -304,9 +304,12 @@
         const ul2 = document.getElementById("comment2");
         const ulbox = document.getElementById("review_box");
         // 正常滚动不断给scrollTop的值+1,当滚动高度大于列表内容高度时恢复为0
+        // console.log(ulbox.scrollTop , ul1.scrollHeight ,)
 
         if (ulbox.scrollTop >= ul1.scrollHeight) {
+            // console.log("this")
             ulbox.scrollTop = 0;
+
         } else {
             ulbox.scrollTop++;
         }
