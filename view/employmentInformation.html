@@ -276,7 +276,9 @@
         </div>
     </div>
 </div>
-
+<div>
+    底部导航通用部分
+</div>
 <script>
     window.onload = roll(50);
     function roll(t) {
@@ -302,8 +304,9 @@
         const ul2 = document.getElementById("comment2");
         const ulbox = document.getElementById("review_box");
         // 正常滚动不断给scrollTop的值+1,当滚动高度大于列表内容高度时恢复为0
+
         if (ulbox.scrollTop >= ul1.scrollHeight) {
-            ulbox.scrollTop=0;
+            ulbox.scrollTop = 0;
         } else {
             ulbox.scrollTop++;
         }
