@@ -16,6 +16,10 @@
     justify-content: space-between;
 }
 
+.banner-warp {
+    margin: 0 auto;
+}
+
 .title {
     font-size: 18px;
     line-height: 36px;
@@ -139,16 +143,31 @@
     height: 100%;
     border-radius: 4px;
 }
+.banner-warp{
+    margin-top: 30px;
+    height: 300px;
+}
 
-
+.swiper-slide>img {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
 @media (min-width: 1300px) {
     .list-wrap {
         width: 1200px;
         height: 503px;
     }
+
+    .banner-warp {
+        width: 1200px;
+        /*height: 300px;*/
+    }
+
 }
+
 @media (max-width: 735px) {
-    .title{
+    .title {
         font-size: 14px;
     }
 }
