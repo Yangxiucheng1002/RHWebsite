@@ -256,7 +256,7 @@
             </div>
         </div>
         <div class="list-right">
-            <div class="title"><img src="../images/电影.png" alt=""><span>近期就业信息>></span></div>
+            <div class="title title2"><img src="../images/电影.png" alt=""><span>近期就业信息>></span></div>
             <div>
                 <ul class="student">
                     <li>
@@ -280,7 +280,7 @@
     底部导航通用部分
 </div>
 <script>
-    window.onload = roll(10);
+    window.onload = roll(50);
     function roll(t) {
         const ul1 = document.getElementById("comment1");
         const ul2 = document.getElementById("comment2");
@@ -304,12 +304,8 @@
         const ul2 = document.getElementById("comment2");
         const ulbox = document.getElementById("review_box");
         // 正常滚动不断给scrollTop的值+1,当滚动高度大于列表内容高度时恢复为0
-        // console.log(ulbox.scrollTop , ul1.scrollHeight ,)
-
         if (ulbox.scrollTop >= ul1.scrollHeight) {
-            // console.log("this")
             ulbox.scrollTop = 0;
-
         } else {
             ulbox.scrollTop++;
         }
