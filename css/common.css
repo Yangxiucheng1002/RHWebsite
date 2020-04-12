@@ -113,7 +113,9 @@ body{
     display: block;
     text-align: center;
     width: 100%;
+    margin: 80px auto 48px ;
 }
+
 .content-common-title h3{
     display: block;
     font-size: 40px;
@@ -246,13 +248,18 @@ footer{
         height: 8px;
         margin-right:8px;
     }
-
+    .content-common-title{
+        margin: 70px auto 40px ;
+    }
 }
 
 @media (min-width: 960px)and (max-width: 1199px){
     .header{
         width: 90%
    }
+   .content-common-title{
+        margin: 60px auto 32px ;
+    }
    .navigation-menu{
         width: 90%;
    }
@@ -285,12 +292,59 @@ footer{
         height: 8px;
         margin-right:8px;
     }
+    footer{
+        margin-top: 30px;
+        padding:  90px 0 81px;
+    }
+
+    .footer{
+        width:90%;
+
+    }
+
+    .foot_logo p{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .ewm{
+        margin:20px 0 8px;
+    }
+
+    .foot-content span{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .foot-text{
+        padding: 22px 0 40px
+    }
+    .foot-title{
+        line-height: 54px;
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+
+    .foot_link_title{
+        font-size: 30px;
+        line-height: 54px;
+        margin-bottom: 20px
+    }
+    .foot_link li{
+       line-height: 38px;
+       letter-spacing: 8px;
+
+    }
+    .foot_link li a{
+        color:#fff;
+    }
 }
 
 @media (min-width: 753px)and (max-width: 959px) {
     .header{
         width: 90%
    }
+   .content-common-title{
+        margin: 50px auto 24px ;
+    }
    .navigation-menu{
         width: 90%;
    }
@@ -321,13 +375,58 @@ footer{
         height: 8px;
         margin-right:8px;
     }
+    footer{
+        margin-top: 30px;
+        padding:  80px 0 72px;
+    }
+
+    .footer{
+        width:90%;
+
+    }
+
+    .foot_logo p{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .ewm{
+        margin:16px 0 6px;
+    }
+
+   
+.foot-content span {
+    line-height: 46px;
+    font-size: 12px;
+
+}
+    .foot-text{
+        padding: 22px 0 40px
+    }
+    .foot-title{
+        line-height: 48px;
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+
+    .foot_link_title{
+        font-size: 26px;
+        line-height: 48px;
+        margin-bottom: 16px
+    }
+    .foot_link li{
+       line-height: 34px;
+       letter-spacing: 6px;
+
+    }
 }
 
 @media (min-width: 595px)and (max-width: 752px) {
     body {
         font-size:14px;
     }
-    
+    .content-common-title{
+    margin: 40px auto 12px ;
+}
     .header{
         width: 90%
    }
@@ -376,10 +475,53 @@ footer{
         height: 8px;
         margin-right:8px;
     }
+    footer{
+         padding: 30px 0 40px;
+    }
+    .footer{
+        width:90%;
+
+    }
+
+    .foot_logo p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .ewm{
+        margin:14px 0 4px;
+    }
+
+    .foot-content span {
+        line-height: 24px;
+        font-size: 12px;
+    }
+    .foot-text{
+        padding: 14px 0 20px
+    }
+   .foot-title {
+        line-height: 40px;
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+
+    .foot_link_title{
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 16px
+    }
+    .foot_link li{
+       line-height: 30px;
+       letter-spacing: 6px;
+
+    }
+   
 }
 @media (min-width: 321px)and (max-width: 595px){
     body {
         font-size:12px;
+    }
+    .content-common-title{
+        margin: 20px auto 8px ;
     }
     .logo{
         padding: 8px 0;
@@ -452,10 +594,53 @@ footer{
         height: 6px;
         margin-right:6px;
     }
+    footer {
+        padding: 20px 0 30px;
+    }
+      .footer{
+        width:90%;
+
+    }
+
+    .foot_logo p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .ewm{
+        margin:10px 0 2px;
+    }
+
+    .foot-content span {
+        line-height: 16px;
+       font-size: 8px;
+    }
+    .foot-text{
+        padding: 5px 0 10px;
+    }
+   .foot-title {
+    line-height: 24px;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+   .foot_link_title {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+    .foot_link li{
+       line-height: 20px;
+       font-size: 10px;
+       letter-spacing: 0px;
+
+    }
 }
 @media (max-width: 320px) {
     body {
         font-size:10px;
+    }
+    .content-common-title{
+        margin: 16px auto 5px ;
     }
     .logo{
         padding: 8px 0;
@@ -524,5 +709,44 @@ footer{
         width: 36px;
         height: 6px;
         margin-right:6px;
+    }
+    footer{
+        padding: 20px 0 10px
+    }
+      .footer{
+        width:90%;
+
+    }
+
+    .foot_logo p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .ewm{
+        margin:10px 0 2px;
+    }
+
+   .foot-content span {
+        line-height: 12px;
+        font-size: 6px;
+    }
+    .foot-text{
+        padding: 12px 0 20px
+    }
+   .foot-title {
+        line-height: 24px;
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
+
+    .foot_link_title{
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 16px
+    }
+    .foot_link li{
+       line-height: 12px;
+       letter-spacing: 0px;
+
     }
 }
