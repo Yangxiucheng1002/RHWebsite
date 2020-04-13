@@ -220,6 +220,73 @@ footer{
 .foot_link li a{
     color:#fff;
 }
+/*  在线服务 */
+.service{
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom:130px;
+    width: 70px;
+    background: #1F8CEB;
+    z-index: 2222;
+}
+.service div{
+    display: block;
+    width:  60px; 
+    margin:0 auto;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    text-align: center;
+    padding: 10px 0 ;
+    box-sizing: border-box;
+    line-height: 26px;
+    cursor: pointer;
+}
+.service a{
+    color:#fff;
+    font-size: 14px;
+}
+.service div img{
+    display: block;
+    width:  36px;
+    height: 36px;
+    margin: 0 auto;
+}
+.service .weibo{
+   border-bottom: none;
+}
+.service .weixin{
+    position: relative;
+}
+
+.service  .weixin_erweima{
+    display: none;
+    border: 1px solid #666;
+    padding: 5px;
+    position: absolute;
+    left: -110px;
+    top:-25px;
+    width: 100px;
+    box-sizing: border-box;
+    height: auto;
+    background: #eee;
+}
+.service .weixin_erweima img{
+    width: 88px;
+    display: block;
+    height: auto;
+}
+.service .weixin_erweima span{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color:#666;
+
+}
+.service .weixin:hover .weixin_erweima{
+    display: block;
+}
 @media (min-width: 1200px)and (max-width: 1920px){
   .navigation-menu>li{
         padding:0 25px;
