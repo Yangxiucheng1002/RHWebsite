@@ -248,3 +248,20 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 525px){
+    .bg-item{
+        width: 70%;
+        line-height: 15px;
+    }
+    .bg-content>h5{
+        font-size: 15px;
+    }
+    .bg-wrap{
+        background-size: 0;
+    }
+    .bg-content>h5>span{
+        padding: 0!important;
+    }
+
+}
